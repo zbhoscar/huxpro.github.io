@@ -1,14 +1,14 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
-    "version": "1.7.0",
-    "homepage": "http://huxpro.github.io",
+    "name": "zbh-blog",
+    "title": "ZBH Blog",
+    "author": "zbh <zbhoscar@gmail.com>",
+    "version": "0.0.1",
+    "homepage": "https://zbhoscar.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Huxpro/huxpro.github.io"
+        "url": "https://github.com/zbhoscar/zbhoscar.github.io"
     },
-    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+    "bugs": "https://github.com/zbhoscar/zbhoscar.github.io/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
@@ -17,8 +17,6 @@
         "grunt-contrib-uglify": "~0.5.1"
     },
     "scripts": {
-        "preview": "cd _site; python -m SimpleHTTPServer 8020",
-        "py3view": "cd _site; python3 -m http.server 8020",
         "watch"  : "grunt watch & npm run preview & jekyll serve -w",
         "py3wa"  : "grunt watch & npm run py3view & jekyll serve -w",
         "boil"   : "git push boilerplate boilerplate:master",
