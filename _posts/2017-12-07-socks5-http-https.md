@@ -100,8 +100,6 @@ Enjoy！
     
 如果代理配置正确，会输出html，同时代理服务器上的`access.log`会记录这次请求
 
-#### [高匿设置](http://hoyoung.net/2017/02/10/squid3-proxy/)
-
 [1]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/1.png
 [2]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/2.png
 [3]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/3.png
