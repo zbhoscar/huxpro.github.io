@@ -35,18 +35,18 @@ tags:
     sudo pip install shadowsocks     
     sudo ssserver -p id -k pwd -m aes-256-cfb -d start  #id、pwd自行设置     
 
-在/etc/rc.local中正确设置开机启动：   
-1./etc/rc.local中不需要sudo(默认root); 2.需要写全路径，可通过which ssserver查看
+在`/etc/rc.local`中正确设置开机启动：   
+1.`/etc/rc.local`中不需要`sudo`(默认root); 2.需要写全路径，可通过`which ssserver`查看
 
     /usr/local/bin/ssserver -p 8388 -k mypassword -m aes-256-cfb -d start  
 
-ps. 输出诊断信息到log，写在执行语句之前，不要盲目修改/etc/rc.local：
+ps. 输出诊断信息到log，写在执行语句之前。切不要盲目修改`/etc/rc.local`：
 
     exec 2> /tmp/rc.local.log      # send stderr from rc.local to a log file
     exec 1>&2                      # send stdout to the same log file
     set -x                         # tell sh to display commands before execution
 
-在/etc/crontab中设置系统定时重启，增加ssserver稳定性：
+在`/etc/crontab`中设置系统定时重启，增加`ssserver`稳定性：
 
     30 22 * * 1,4 root sleep 70 || /sbin/reboot          # 照猫画虎，注意时区换算(uptime, last reboot, 服务器22:3即北京6:30, 每周1,4) 
 
@@ -98,7 +98,7 @@ Enjoy！
     export http_proxy="http://用户名:密码@代理IP:代理端口"
     curl -l "http://www.baidu.com"
     
-如果代理配置正确，回输出html，同时代理服务器上的access.log会记录这次请求
+如果代理配置正确，会输出html，同时代理服务器上的`access.log`会记录这次请求
 
 #### [高匿设置](http://hoyoung.net/2017/02/10/squid3-proxy/)
 
