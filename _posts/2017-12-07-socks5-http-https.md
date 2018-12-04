@@ -9,22 +9,24 @@ catalog:      true
 tags:
     - IT
     - Proxy
-    - Shocks5
+    - Socks5
 ---
 # 一、创建google cloud账号 
 该填啥填啥，需要绑定一张信用卡     
-![img](/img/in-posts/post-proxy/af4e49f529b65c957316cf26277c93be.png)
+![img][1]  
 
 创建VM实例（做代理最小型机器就可以）    
-![img](/img/in-posts/post-proxy/62f3f5cfa805516e8b8765db7be2bb08.png)
+![img][2]   
 
 防火墙设置      
-![img](/img/in-posts/post-proxy/c82558bcfb0afd87c725feb5ed1b9b3f.png)      
-![img](/img/in-posts/post-proxy/56cf67e4b1988f8f3fb3efda695cb2bc.png)
+![img][3]     
+关键项如下      
+![img][4]    
 
 # 二、SOCKS5       
-![img](/img/in-posts/post-proxy/1403aa78e50c4d13b910a48da8068227.png)     
-![img](/img/in-posts/post-proxy/1030a9162fd97f5e61f5345858a83e40.png)
+通过VM实例SSH进入服务器系统
+![img][5]         
+![img][6]      
 
 #### 手动设置SS服务器    
 
@@ -54,10 +56,11 @@ ps. 输出诊断信息到log，写在执行语句之前，不要盲目修改/etc
     chmod +x shadowsocks-all.sh
     sudo ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 
-在客户端设置ss连接
+直接进入设置界面，记好自己的设置
 
 #### 在windows中的配置客户端
-![img](/img/in-posts/post-proxy/91d7e986ce6f422b38da130de2c723b6.png)   
+![img][7]      
+![img][8]       
 该怎么连就怎么连   
 Enjoy！   
 
@@ -98,6 +101,16 @@ Enjoy！
 如果代理配置正确，回输出html，同时代理服务器上的access.log会记录这次请求
 
 #### [高匿设置](http://hoyoung.net/2017/02/10/squid3-proxy/)
+
+[1]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/1.png
+[2]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/2.png
+[3]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/3.png
+[4]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/4.png
+[5]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/5.png
+[6]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/6.png
+[7]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/7.png
+[8]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-proxy/8.png
+
 
 
 
