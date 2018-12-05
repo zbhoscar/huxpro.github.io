@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Ubuntu Shell 常用指令
-subtitle:   在Shell
+title:      Ubuntu Shell常用指令
+subtitle:   命令行下的操作
 date:       2016-12-08
 author:     Oscar Zhang
 header-style: text
