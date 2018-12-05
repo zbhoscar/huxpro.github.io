@@ -13,7 +13,7 @@ tags:
 ---
 常用Ubuntu做科研，这是常用的一些配置指南。
 
-### ShadowSocks配置
+### 科学上网
 
 #### 安装ShadowSocks
 
@@ -38,7 +38,7 @@ tags:
 
 `DIR`是`.json`的路径，`sslocal`可以通过`which sslocal`找到
 
-#### 添加开机服务
+#### ShadowSocks服务
 
 先写一个`.service`文件
 
@@ -68,7 +68,7 @@ tags:
 比如系统自带firefox浏览器中，设置手动代理，选择socks5 DNS，加入科学端口就可以了。   
 [更全面的讲解](https://blog.huihut.com/2017/08/25/LinuxInstallConfigShadowsocksClient/)
 
-### Proxychains
+#### Proxychains
 
 通过`ShadowSocks`的建立的本地端口给指令科学加成
 
@@ -84,36 +84,56 @@ tags:
 
 [更全面的讲解](http://einverne.github.io/post/2017/02/terminal-sock5-proxy.html)
 
-### readline插件
+### 服务器远程控制
 
-解决使用Shell时⬆⬇⬅➡乱码的问题，**在Ubuntu16中貌似不需要**
+#### 命令行控制
+需要在受控机器与本机在同一网络下
 
-    sudo apt-get install libreadline-dev    ， 不然安装python3的方向键会乱码
+    ssh usrname@server_ip
+    
+[不在同一网络下的方法](https://zbhoscar.github.io/2018/08/19/frp/)
+    
+#### 图形界面控制
 
-### terminator终端
+受控机器使用VNC做图形界面控制，需要与本机在同一网络中
+                                                
+    sudo apt-get install vnc4server    # 最新版本看官网
+    vim /home/用户名/.vnc/xstartup
+    ⬇⬇⬇ 内容修改 ⬇⬇⬇
+    # &x-window-manager &              # 注释掉     
+    exec /usr/bin/mate-session &       # 针对mate界面
+    ⬆⬆⬆ 内容修改 ⬆⬆⬆
+    service vncserver restart
 
-很好用的终端，戒不掉
+使用方法
 
-    sudo apt-get install terminator
+    ssh usrname@server_ip               # 本机命令行登陆受控机器
+    vncserver -geometry 1024x768 :id    # 受控机器开启界面，注意是x不是*
+    vncviewer server_ip:id              # 本机登陆vnc登陆受控机器
+    vncserver -kill :id                 # 受控机器关闭界面
+    ps -ef | grep 'vnc' | grep id       # 受控机器检测vnc端口id被占用
 
-### 右键打开终端选项
+### 硬盘挂载
 
-很实用，需要重启，**在Ubuntu16中貌似不需要**
+#### Samba远程文件夹
 
-    sudo apt-get install nautilus-open-terminal
+[配置Samba远程连接](http://jingyan.baidu.com/article/00a07f38b9194082d028dc08.html)  
+    
+Windows系统
+    
+    任意界面 `win + R`
+    > 输入 \\受控机器的ip\文件夹名 <
+    > 输入 账号密码 <
 
-[终端配色](https://ubuntugenius.wordpress.com/2011/07/11/how-to-change-the-command-line-prompt-colour-in-the-ubuntulinux-terminal/)
+Ubuntu系统
+    
+    文件夹界面 `Ctrl + l`
+    > 输入 smb://受控机器的ip/文件夹名/
+    > 输入 账号密码 <
 
-    sudo gedit ~/.bashrc
-   替换相似`PS1`行，并设置`force_color_prompt=yes`     
-   这是一种配色方案     
-   
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u\[\033[01;36m\]@\[\033[01;36m\]\h\[\033[01;36m\]:\[\033[01;33m\]\w\[\033[01;36m\]\$ \[\e[m\] '
+#### [`/home`挂载](https://www.jianshu.com/p/5c12289dbcd1)
 
-### 超级解压缩
-
-    apt install pigz
-    tar --use-compress-program=pigz -xvpf ucfTrainTestlist.tar.gz -C ./test
+#### [NFS硬盘挂载](https://www.cnblogs.com/heruiguo/p/7998260.html)
 
 ### Ubuntu环境文件
 
@@ -140,7 +160,51 @@ tags:
     export LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LIBRARY_PATH
     export PYTHONPATH=/home/zbh/Desktop/caffe-ssd/python:$PYTHONPATH
 
-### GCC/G++ multi
+### 终端相关
+#### readline插件
+
+解决使用Shell时⬆⬇⬅➡乱码的问题，**在Ubuntu16中貌似不需要**
+
+    sudo apt-get install libreadline-dev    ， 不然安装python3的方向键会乱码
+
+#### terminator终端
+
+很好用的终端，戒不掉
+
+    sudo apt-get install terminator
+
+#### 右键打开终端选项
+
+很实用，需要重启，**在Ubuntu16中貌似不需要**
+
+    sudo apt-get install nautilus-open-terminal
+
+#### [终端配色](https://ubuntugenius.wordpress.com/2011/07/11/how-to-change-the-command-line-prompt-colour-in-the-ubuntulinux-terminal/)
+
+    sudo gedit ~/.bashrc
+   替换相似`PS1`行，并设置`force_color_prompt=yes`     
+   这是一种配色方案：     
+   
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u\[\033[01;36m\]@\[\033[01;36m\]\h\[\033[01;36m\]:\[\033[01;33m\]\w\[\033[01;36m\]\$ \[\e[m\] '
+
+### 数据格式相关
+#### 超级解压缩
+
+    apt install pigz
+    tar --use-compress-program=pigz -xvpf ucfTrainTestlist.tar.gz -C ./test
+
+#### 安装rar
+解压RAR出`Parsing Filters is unsupported`
+
+    sudo apt-get install unrar
+    
+#### U盘exFat格式支持
+可能需要重启，反正Ubuntu16不需要
+
+    sudo apt-get install exfat-utils 
+
+### 其他
+####  GCC/G++ multi
 
     sudo add-apt-repository ppa:ubuntu-toolchain-r/test
     sudo apt-get update
@@ -152,26 +216,16 @@ tags:
     sudo update-alternatives --config gcc
     sudo update-alternatives --remove gcc /usr/bin/gcc-4.5
 
-### FFMPEG
+#### FFMPEG
 解决编译OpenCV出错的问题
 
     sudo apt-get install librubberband-dev libx264-dev libvpx-dev
     ./configure --enable-gpl --enable-version3 --enable-nonfree --enable-libx264 --enable-librubberband --enable-libvpx
 
-### U盘设置exFat格式Enable
-可能需要重启，反正Ubuntu16不需要
-
-    sudo apt-get install exfat-utils 
-
-### Firefox使用本地账户
+#### Firefox使用本地账户
 
 [在附加组件(addons)中添加附加组件管理器(addons manager)](http://mozilla.com.cn/thread-343905-1-1.html)
 
-### 安装rar
-解压RAR出`Parsing Filters is unsupported`
-
-    sudo apt-get install unrar
-
-### 设置工作区
+#### 设置工作区
 在`software center`中设置`unity tweak tool`
 
