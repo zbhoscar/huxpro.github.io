@@ -10,6 +10,7 @@ tags:
     - IT
     - Ubuntu
     - Linux
+    - Init
 ---
 常用Ubuntu做科研，这是常用的一些配置指南。
 
