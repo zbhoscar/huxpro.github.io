@@ -66,12 +66,12 @@ ps. 输出诊断信息到log，写在执行语句之前。切不要盲目修改`
 
 直接进入设置界面，记好自己的设置
 
-#### 在windows中的配置客户端
+#### windows配置客户端
 ![img][7]      
 ![img][8]       
 该怎么连就怎么连   
 Enjoy！   
-#### [在Linux/Ubuntu中的配置客户端](https://zbhoscar.github.io/2016/12/08/ubuntu-base/)  
+#### [Linux/Ubuntu配置客户端](https://zbhoscar.github.io/2016/12/08/ubuntu-base/)  
 
 
 
