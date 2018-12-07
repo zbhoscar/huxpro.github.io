@@ -58,6 +58,60 @@ ps. 输出诊断信息到log，写在执行语句之前。切不要盲目修改`
 
     30 22 * * 1,4 root sleep 70 || /sbin/reboot          # 照猫画虎，注意时区换算(uptime, last reboot, 服务器22:3即北京6:30, 每周1,4) 
 
+#### 通过`.json`启动
+
+编写`vim ~/shadowsocks-server.json`文件        
+
+    -------- single usr --------
+    {
+        "server":"0.0.0.0",
+        "server_port":8388,
+        "local_address": "127.0.0.1",
+        "local_port":1080,
+        "password":"mypassword",
+        "timeout":300,
+        "method":"aes-256-cfb"
+    }
+    -------- multiple usr --------
+    {  
+         "server":"0.0.0.0"，  
+         "local_address": "127.0.0.1",  
+         "local_port":1080,  
+          "port_password": {  
+             "8388": "password",  
+             "8387": "password",  
+             "8386": "password",  
+             "8385": "password"  
+         },  
+         "timeout":300,  
+         "method":"aes-256-cfb",  
+         "fast_open": false  
+        }  
+
+启动
+
+    ssserver -c ~/shadowsocks-server.json -d start
+        
+#### 设置服务
+
+编辑
+        
+    vim /etc/supervisord.conf
+    
+添加内容
+
+    [program:shadowsocks]
+    command=ssserver -c /etc/shadowsocks.json
+    autostart=true
+    autorestart=true
+    user=root
+    log_stderr=true
+    logfile=/var/log/shadowsocks.log
+
+在`/etc/rc.local`中添加
+
+    service supervisord start
+
 #### 使用[大神脚本](https://teddysun.com/486.html)设置SS服务器
 
     wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
