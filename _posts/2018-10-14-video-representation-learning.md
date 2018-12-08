@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      【Draft】Video Representation LearningFor Action Recognition
+title:      【Draft】Video Representation Learning For Action Recognition
 subtitle:   利用unlabeled data进行pre-train得到权值做fine tune，用于action recognition
 date:       2018-10-14
 author:     Oscar Zhang
@@ -20,13 +20,19 @@ tags:
 
 ## 这是个啥问题
 
+#### Pre-train广为采用
+
 随着CNN在CV中的广泛应用，使得视觉问题的分类性能大幅提升，不是分类问题的也大多转化成分类问题套用CNN。在实验中普遍采用了网络预处理的步骤：针对研究的问题提出模型设计网络，对网络使用ImageNet（经典带标注的大规模图像数据集）做pre-train，然后在自己的问题中fine tune。这个操作普遍可以使训练相对于随机初值有一定的提升，比如two-stream action，它的spatial stream随机初值精度40%，而使用ImageNet pre-train之后能达到70%。
 
 |![][1]|![][2]| 
 |:---:|:---:|
 |Simonyan K, Zisserman A. Two-stream convolutional networks for action recognition in videos[C]//Advances in neural information processing systems. 2014: 568-576.|Carreira J, Zisserman A. Quo vadis, action recognition? a new model and the kinetics dataset[C]//Computer Vision and Pattern Recognition (CVPR), 2017 IEEE Conference on. IEEE, 2017: 4724-4733.|
 
+#### Why
+
 为什么这么做有提升？普遍的解释是预训练得到的权值，包含了其所用数据集的信息。在此基础之上做fine tune，就利用了这些信息。在机器学习的范畴内，如果模型相近任务类似，自然是学习过程中用到的信息越多，结果越好。
+
+#### 更好的pre-train？
 
 但这样的问题是，尽管ImageNet规模很大，常用来做pre-train效果也不错，但相对于unlabeled data体量还是太小了。为了利用更多的数据，很明显也就有两大出路：
 
