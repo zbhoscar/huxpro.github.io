@@ -219,6 +219,8 @@ And special thanks to 
 
 Thank you all!
 
+often help my friends in resolving issues of PC hardware and software, reinforcing the public sense of `computer science = computer requiring`
+
 ---
 
 ## Appendix. Architecture Diagram
