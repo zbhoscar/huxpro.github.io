@@ -22,7 +22,7 @@ tags:
 
 #### Pre-train广为采用
 
-随着CNN在CV中的广泛应用，使得视觉问题的分类性能大幅提升，不是分类问题的也大多转化成分类问题套用CNN。在实验中普遍采用了网络预处理的步骤：针对研究的问题提出模型设计网络，对网络使用ImageNet（经典带标注的大规模图像数据集）做pre-train，然后在自己的问题中fine tune。这个操作普遍可以使训练相对于随机初值有一定的提升，比如two-stream action，它的spatial stream随机初值精度40%，而使用ImageNet pre-train之后能达到70%。
+随着CNN在CV中的广泛应用，使得视觉问题的分类性能大幅提升，不是分类问题的也大多转化成分类问题套用CNN。在实验中普遍采用了网络预处理的步骤：针对研究的问题提出模型设计网络，对网络使用ImageNet（经典带标注的大规模图像数据集）做pre-train，然后在自己的问题中fine tune。这个操作普遍可以使训练相对于随机初值有一定的提升，比如two-stream action，它的spatial stream随机初值精度40%，而使用ImageNet pre-train之后能达到70%。如下图：
 
 |![][1]|![][2]| 
 |:---:|:---:|
@@ -41,12 +41,12 @@ tags:
 - 利用无标注的数据。直接利用无标注的数据得到预训练权值，也是研究的另一种思路。当数据不再受标注的限制，就可以利用无限的数据来帮助模型的训练，提升效果。        
 但正因为没有标记，也就意味着pre-train并不能直接用分类的模型来设计，需要一定的转化。而且得到的预训练权值，从解释性角度来讲，用来做研究问题的分类训练也是需要转化的。正如此，已有工作利用unlabeled data的效果并不好，目前为止还是直接塞ImageNet做预训练最好。
 
-处于对CNN模型的理解，可以认为pre-train得到的权值（或其中一部分），是一种表征。
-
+处于对CNN模型的理解，可以认为pre-train得到的权值（或其中一部分），是一种表征。       
 在视频动作识别问题中，对预训练有格外的依赖，表征学习也发展为一个分支。
 
 ## 
 
+![][3]
 
 [1]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-video-rep/1.png
 [2]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-video-rep/2.png
