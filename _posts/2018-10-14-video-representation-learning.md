@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      【Draft】Video Representation Learning For Action Recognition
+title:      Video Representation Learning For Action Recognition
 subtitle:   利用unlabeled data进行pre-train得到权值做fine tune，用于action recognition
 date:       2018-10-14
 author:     Oscar Zhang
@@ -42,11 +42,19 @@ tags:
 但正因为没有标记，也就意味着pre-train并不能直接用分类的模型来设计，需要一定的转化。而且得到的预训练权值，从解释性角度来讲，用来做研究问题的分类训练也是需要转化的。正如此，已有工作利用unlabeled data的效果并不好，目前为止还是直接塞ImageNet做预训练最好。
 
 处于对CNN模型的理解，可以认为pre-train得到的权值（或其中一部分），是一种表征。       
-在视频动作识别问题中，对预训练有格外的依赖，表征学习也发展为一个分支。
-
-## 
+在视频动作识别问题中，对预训练有格外的依赖，表征学习也发展为一个分支。     
+具体来说流程如下：
 
 ![][3]
+
+## 近年工作
+
+#### PATCH TRACKING
+
+Wang X, Gupta A. Unsupervised learning of visual representations using videos[J]. arXiv preprint arXiv:1505.00687, 2015.
+
+对视频中的目标进行跟踪，得到目标序列。采用triple Siamese Network，第一路是个目标序列的头，第二路是目标序列的尾，第三路是无关项。   
+![][6]
 
 [1]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-video-rep/1.png
 [2]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-video-rep/2.png
