@@ -53,8 +53,47 @@ tags:
 
 Wang X, Gupta A. Unsupervised learning of visual representations using videos[J]. arXiv preprint arXiv:1505.00687, 2015.
 
-对视频中的目标进行跟踪，得到目标序列。采用triple Siamese Network，第一路是个目标序列的头，第二路是目标序列的尾，第三路是无关项。   
+对视频中的目标进行跟踪，得到目标序列。采用triple Siamese Network，第一路是个目标序列的头，第二路是目标序列的尾，第三路是无关项。设计网络输出为比较三路目标的相似度，得到网络权值。     
+
 ![][6]
+
+损失函数设计为
+
+$$\mathop{\min}_{W} \frac {\lambda}{2}  \| W\|_{2}^{2} + \sum_{i=1}^{N}\max{\{0, D(X_{i},X_{i}^{+}-D(X_{i},X_{i}^{-})+M\}}$$
+
+其中，$$D(X_{1},X_{2})=1-\frac{\mathcal {f}(X_{1})·\mathcal {f}(X_{2})}{ \| \mathcal {f}(X_{1})\| \|\mathcal {f}(X_{2}) \|}$$
+
+#### TUPLES of TEMPORALLY ORDER
+
+Wang X, Gupta A. Unsupervised learning of visual representations using videos[J]. arXiv preprint arXiv:1505.00687, 2015.
+
+![][9]
+
+还是triple Siamese Network，但是每一路的输入有变化。以视频序列中的三帧为输入，符合自然顺序的为正，不符合为负，转为分类问题。
+
+![][10]
+
+#### O3N
+
+Fernando B, Bilen H, Gavves E, et al. Self-supervised video representation learning with odd-one-out networks[C]//2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). IEEE, 2017: 5729-5738.
+
+扩展为更多路的Siamese Network，每一路输入为一个单独的样本，样本是视频序列中6帧的编码，编码方法比如为Dynamic Image。6帧的采样，以自然顺序为正，非自然为负，总体只有一路的错误的。转化为判断哪一路为错误的分类问题。
+
+![][4]
+
+#### AoT
+
+Wei D, Lim J, Zisserman A, et al. Learning and using the arrow of time[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018: 8052-8060.
+
+这个问题的解决，是采用了建立带标注新数据集的方法。但是不同于ImageNet，这个数据集是专门为了研究视频中动作区域建立的，虽然需要人力，但是规模比ImageNet小的很多，但却达到了相同的pre-train效果。
+
+![][5]
+
+
+
+
+
+
 
 [1]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-video-rep/1.png
 [2]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-video-rep/2.png
