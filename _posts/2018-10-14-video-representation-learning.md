@@ -49,7 +49,7 @@ tags:
 
 ## 近年工作
 
-#### PATCH TRACKING
+#### Patch Tracking
 
 Wang X, Gupta A. Unsupervised learning of visual representations using videos[J]. arXiv preprint arXiv:1505.00687, 2015.
 
@@ -63,7 +63,7 @@ $$\mathop{\min}_{W} \frac {\lambda}{2}  \| W\|_{2}^{2} + \sum_{i=1}^{N}\max{\{0,
 
 其中，$$D(X_{1},X_{2})=1-\frac{\mathcal {f}(X_{1})·\mathcal {f}(X_{2})}{ \| \mathcal {f}(X_{1})\| \|\mathcal {f}(X_{2}) \|}$$
 
-#### TUPLES of TEMPORALLY ORDER
+#### Tuples Order
 
 Wang X, Gupta A. Unsupervised learning of visual representations using videos[J]. arXiv preprint arXiv:1505.00687, 2015.
 
@@ -88,12 +88,6 @@ Wei D, Lim J, Zisserman A, et al. Learning and using the arrow of time[C]//Proce
 这个问题的解决，是采用了建立带标注新数据集的方法。但是不同于ImageNet，这个数据集是专门为了研究视频中动作区域建立的，虽然需要人力，但是规模比ImageNet小的很多，但却达到了相同的pre-train效果。
 
 ![][5]
-
-
-
-
-
-
 
 [1]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-video-rep/1.png
 [2]: https://raw.githubusercontent.com/zbhoscar/zbhoscar.github.io/master/img/in-post/post-video-rep/2.png
