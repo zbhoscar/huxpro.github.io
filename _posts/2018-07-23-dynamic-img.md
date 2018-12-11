@@ -50,7 +50,9 @@ $$\Phi_{t}$$是视频的第$$t$$帧，系数$$\alpha_{t}=2(T-t+1)-(T+1)(H_{T}-H_
 ## Rank Pooling
 
 可以看到，样本$$[x_{1}, x_{2}, \dots, x_{N}]$$和参数$$w$$是同维度的，如果将每一帧直接拉成一个特征作为样本，那么最后得到的$$w$$也可以还原成同长宽、通道的图像显示。这样的过程可以看作是视频中的所有帧，通过一些列操作变成一张图片，每个点可以视为做了一个复杂的pooling。        
+
 但是仅仅如此还不够。因为一个图片，拉成特征之后的维度是相当高的（224见方的图的拉成特征后维度是150528），可行性很差。      
+
 所以通过近似求解，得到了最终的Dynamic Image算法:     
 Bilen H, Fernando B, Gavves E, et al. Dynamic image networks for action recognition[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016: 3034-3042.
 
