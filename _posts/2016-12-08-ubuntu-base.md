@@ -7,8 +7,6 @@ author:     Oscar Zhang
 header-style: text
 catalog:      true
 tags:
-    - IT
-    - Ubuntu
     - Linux
     - Init
 ---

@@ -7,7 +7,6 @@ author:     Oscar Zhang
 header-style: text
 catalog:      true
 tags:
-    - IT
     - Proxy
     - Socks5
 ---
