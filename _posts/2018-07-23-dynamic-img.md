@@ -53,7 +53,7 @@ $$\Phi_{t}$$是视频的第$$t$$帧，系数$$\alpha_{t}=2(T-t+1)-(T+1)(H_{T}-H_
 
 但是仅仅如此还不够。因为一个图片，拉成特征之后的维度是相当高的（224见方的图的拉成特征后维度是150528），可行性很差。      
 
-所以通过近似求解，得到了最终的Dynamic Image算法:     
+所以通过近似求解，得到了最终的Dynamic Image算法，只要对序列中的帧进行简单加和即可:     
 Bilen H, Fernando B, Gavves E, et al. Dynamic image networks for action recognition[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016: 3034-3042.
 
 
