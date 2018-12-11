@@ -2,7 +2,7 @@
 layout:     post
 title:      Video Representation Learning For Action Recognition
 subtitle:   利用unlabeled data进行pre-train得到权值做fine tune，用于action recognition
-date:       2018-10-14
+date:       2018-06-10
 author:     Oscar Zhang
 header-style:   text
 catalog:    true
