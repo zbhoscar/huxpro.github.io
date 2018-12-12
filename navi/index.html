@@ -12,11 +12,22 @@ https://github.com/kitian616/jekyll-TeXt-theme
 <!-- Page Header -->
 {% include intro-header.html type='page' short=true %}
 
-<!-- Chinese Version -->
-<div class="zh post-container">
-    {% capture about_zh %}{% include MD-en-zh/navi-www.md %}{% endcapture %}
-    {{ about_zh | markdownify }}
-</div>
+<body>
+    <div style="border: 0px solid #000000; width: 960px; height: auto;margin: auto;">
+        <!--<span>这是居中显示的一段文字</span>-->
+        <!-- Chinese Version -->
+        <div class="zh post-container">
+            {% capture about_zh %}{% include MD-en-zh/navi-www.md %}{% endcapture %}
+            {{ about_zh | markdownify }}
+        </div>
+    </div>
+</body>
+
+<!--&lt;!&ndash; Chinese Version &ndash;&gt;-->
+<!--<div class="zh post-container">-->
+    <!--{% capture about_zh %}{% include MD-en-zh/navi-www.md %}{% endcapture %}-->
+    <!--{{ about_zh | markdownify }}-->
+<!--</div>-->
 
 <!--&lt;!&ndash; Main Content &ndash;&gt;-->
 <!--<div class="container">-->
