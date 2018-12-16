@@ -1,7 +1,8 @@
 # Site settings
-title: Blog | Zhang Bohua
+title: Zhang Bohua
 SEOTitle: Zhang Bohua
-header-img: img/post-bg-huanhuan.jpg
+header-img: img/general-xjtu-02.jpg
+
 email: zbhoscar[at]gmail[dot]com
 description: "Just a tiny Ph.D. candidate"
 keyword: "Computer Vision, Deep Learning, Life, DIY, Swimming"
@@ -67,7 +68,7 @@ ga_track_id: 'UA-130014848-1'            # Format: UA-xxxxxx-xx
 ga_domain: auto
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+sidebar: True                           # whether or not using Sidebar.
 sidebar-about-description: "博观约取, 厚积薄发"
 sidebar-avatar: /img/about-zbh.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
