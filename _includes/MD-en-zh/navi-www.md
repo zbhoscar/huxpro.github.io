@@ -29,7 +29,6 @@ Developer Org
 [[TensorFlow]](https://www.tensorflow.org/get_started)
 [[Caffe]](http://caffe.berkeleyvision.org/tutorial/interfaces.html)
 [[MatConvNet]](http://www.vlfeat.org/matconvnet)
-[[playground]](http://playground.tensorflow.org)
 [[CUDA.doc]](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#abstract)
 [[CUDA.download]](https://developer.nvidia.com/cuda-downloads)
 [[cuDNN.download]](https://developer.nvidia.com/cudnn)      
@@ -39,11 +38,13 @@ Developer Org
 [[OpenWrt]](https://wiki.openwrt.org/start)
 [[Rufus]](https://rufus.akeo.ie/)
 [[Sublime_cn]](http://www.sublimetextcn.com/)
-[[Matrix Calculus]](http://www.matrixcalculus.org/)
-[[Jekyll_cn]](http://jekyllcn.com/)     
+[[Matrix Calculus]](http://www.matrixcalculus.org/)     
+[[Jekyll_cn]](http://jekyllcn.com/)
 [[Latex.Math]](http://latex.91maths.com/)
 [[GCP]](https://cloud.google.com/)
 [[GCP ping]](http://www.gcping.com/)
+[[playground]](http://playground.tensorflow.org)
+
 
 
 
