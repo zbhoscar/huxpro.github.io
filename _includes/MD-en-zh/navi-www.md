@@ -40,6 +40,10 @@ Developer Org
 [[Rufus]](https://rufus.akeo.ie/)
 [[Sublime_cn]](http://www.sublimetextcn.com/)
 [[Matrix Calculus]](http://www.matrixcalculus.org/)
+[[Jekyll_cn]](http://jekyllcn.com/)     
+[[Latex.Math]](http://latex.91maths.com/)
+[[GCP]](https://cloud.google.com/)
+[[GCP ping]](http://www.gcping.com/)
 
 
 
@@ -79,4 +83,5 @@ XJTU
 [[吉他谱]](http://www.jitapu.com/)
 [[网易印象派]](http://yxp.163.com/)
 [[北邮人Ipv6]](http://bt.byr.cn/)
+[[US News]](http://www.usnews.com/education/best-global-universities/rankings)
 
