@@ -6,6 +6,7 @@
 [[dblp]](https://dblp.uni-trier.de/)
 [[Semantic Scholar]](https://www.semanticscholar.org/)
 
+
 Coding      
 [[TF.tutorial]](https://github.com/caicloud/tensorflow-tutorial)
 [[ALL.Pre-train]](https://github.com/taehoonlee/tensornets)
@@ -46,8 +47,6 @@ Developer Org
 [[playground]](http://playground.tensorflow.org)
 
 
-
-
 LAB &Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
 [[VGG]](http://www.robots.ox.ac.uk/~vgg/)
@@ -68,6 +67,7 @@ DataSets
 [[UCF101]](http://crcv.ucf.edu/data/UCF101.php)
 [[Kinetics]](https://deepmind.com/research/open-source/open-source-datasets/kinetics/) 
 
+
 XJTU        
 [[西安交通大学]](http://www.xjtu.edu.cn/)
 [[图书馆]](http://www.lib.xjtu.edu.cn/)
@@ -77,6 +77,7 @@ XJTU
 [[兵马俑]](http://bbs.xjtu.edu.cn/)
 [[人机所]](http://www.aiar.xjtu.edu.cn/)
 [[学生Mail]](http://stu.xjtu.edu.cn/coremail/)
+
 
 生活娱乐        
 [[ThinkPad海淘]](http://163rody.corporateperks.com/offer/index/offerid/757324)
