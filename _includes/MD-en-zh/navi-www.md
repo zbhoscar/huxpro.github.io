@@ -55,7 +55,7 @@ LAB &Daniel
 [[MSRA]](https://www.msra.cn/)
 [[SVL]](http://vision.stanford.edu/)
 [[CMU RI]](https://www.ri.cmu.edu/about/)
-[[CVL]](http://vision.eecs.northwestern.edu/)
+[[CVL]](http://vision.eecs.northwestern.edu/)       
 [[sczhu]](http://www.stat.ucla.edu/~sczhu/)
 [[feifeili]](http://vision.stanford.edu/feifeili/)
 [[abhinavg]](http://www.cs.cmu.edu/~abhinavg/)
