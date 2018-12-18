@@ -10,9 +10,9 @@
 Coding      
 [[TF.tutorial]](https://github.com/caicloud/tensorflow-tutorial)
 [[ALL.Pre-train]](https://github.com/taehoonlee/tensornets)
-[[TF_cn]](http://www.tensorfly.cn/)
-[[TF.API]](https://www.tensorflow.org/api_docs/python/)
-[[TF.Pre-train]](https://www.tensorflow.org/api_docs/python/)       
+[[TF_cn]](http://www.tensorfly.cn)
+[[TF.API]](https://www.tensorflow.org/api_docs/python)
+[[TF.Pre-train]](https://github.com/tensorflow/models/tree/master/research/slim)       
 [[vlfeat]](https://github.com/vlfeat/vlfeat)
 [[LIBSVM]](https://github.com/cjlin1/libsvm)
 [[LIBLINEAR]](http://www.csie.ntu.edu.tw/~cjlin/liblinear/)
