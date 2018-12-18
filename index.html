@@ -3,13 +3,9 @@ layout: page
 description: "Personal Assistant Website"
 ---
 
-<body>
-    <div style="border: 0px solid #000000; width: 960px; height: auto;margin: auto;">
-        <!--<span>这是居中显示的一段文字</span>-->
-        <!-- Chinese Version -->
-        <div class="zh post-container">
-            {% capture about_zh %}{% include MD-en-zh/navi-www.md %}{% endcapture %}
-            {{ about_zh | markdownify }}
-        </div>
-    </div>
-</body>
+
+<div class="zh post-container">
+    {% capture about_zh %}{% include MD-en-zh/navi-www.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
+</div>
+
