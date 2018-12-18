@@ -1,6 +1,6 @@
 文献检索        
 [[XJTU lib]](http://www.lib.xjtu.edu.cn/)
-[[WoS]](www.webofknowledge.com/)
+[[WoS]](https://apps.webofknowledge.com/)
 [[Google Scholar]](https://scholar.google.com)
 [[CCF rcmd]](https://www.ccf.org.cn/c/2016-12-27/569124.shtml) 
 [[dblp]](https://dblp.uni-trier.de/)
