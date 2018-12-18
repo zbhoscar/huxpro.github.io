@@ -21,7 +21,8 @@ Coding
 [[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)         
 [[Devil Details]](http://www.robots.ox.ac.uk/~vgg/software/deep_eval/)
 [[two-stream fusion]](https://github.com/feichtenhofer/twostreamfusion)         
-[[Python.Liao]](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+[[廖雪峰]](https://www.liaoxuefeng.com/)
+[[morvanzhou]](https://morvanzhou.github.io/)
 [[Parallel Python]](http://www.parallelpython.com/)
 [[极客学院]](http://www.jikexueyuan.com/)
     
