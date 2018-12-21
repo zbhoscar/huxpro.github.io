@@ -51,11 +51,12 @@ Developer Org
 LAB &Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
 [[VGG]](http://www.robots.ox.ac.uk/~vgg/)
+[[EPFL CVLAB]](https://cvlab.epfl.ch/)
 [[LAMBDA]](http://lamda.nju.edu.cn)
 [[MSRA]](https://www.msra.cn/)
 [[SVL]](http://vision.stanford.edu/)
 [[CMU RI]](https://www.ri.cmu.edu/about/)
-[[CVL]](http://vision.eecs.northwestern.edu/)       
+[[NW CVLAB]](http://vision.eecs.northwestern.edu/)       
 [[sczhu]](http://www.stat.ucla.edu/~sczhu/)
 [[feifeili]](http://vision.stanford.edu/feifeili/)
 [[abhinavg]](http://www.cs.cmu.edu/~abhinavg/)
@@ -69,6 +70,7 @@ DataSets
 [[UCF101]](http://crcv.ucf.edu/data/UCF101.php)
 [[Kinetics]](https://deepmind.com/research/open-source/open-source-datasets/kinetics/)
 [[AoT]](https://github.com/donglaiw/AoT_Dataset)
+[[AVA]](https://research.google.com/ava/)
 
 
 XJTU        
