@@ -62,7 +62,7 @@ LAB &Daniel
 [[feifeili]](http://vision.stanford.edu/feifeili/)
 [[abhinavg]](http://www.cs.cmu.edu/~abhinavg/)
 [[wanli]](https://sydney.edu.au/engineering/people/wanli.ouyang.php)
-[[Liang]](http://www.liangzheng.com.cn)
+[[liang]](http://www.liangzheng.com.cn)
 
 DataSets      
 [[HOHA]](https://www.di.ens.fr/~laptev/actions/)
