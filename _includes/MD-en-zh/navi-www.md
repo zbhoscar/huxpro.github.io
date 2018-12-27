@@ -25,6 +25,7 @@ Coding
 [[morvanzhou]](https://morvanzhou.github.io/)
 [[Parallel Python]](http://www.parallelpython.com/)
 [[极客学院]](http://www.jikexueyuan.com/)
+[[Numpy.API]](https://www.numpy.org.cn/)
     
 
 Developer Org   
