@@ -75,7 +75,7 @@ tags:
     
 下载
 
-    wget https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json ~
+    wget ~ https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json
 
 启动ShadowSocks
 
@@ -101,15 +101,15 @@ tags:
     ExecStart=/usr/bin/sslocal -c /path/shadowsocks.json
     
     [Install]
-    WantedBy=multi-user.target                
+    WantedBy=multi-user.target    
+
+懒得写命令行:
+
+    wget -P /lib/systemd/system https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.service
 
 启动服务
     
     systemctl enable /lib/systemd/system/shadowsocks.service 
-
-懒得写命令行:
-
-    wget https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.service /lib/systemd/system
 
 最终效果是给本机 ip `127.0.0.1`的`1080`端口科学加成，可以配置浏览器和软件用来科学。    
 比如系统自带firefox浏览器中，设置手动代理，选择socks5 DNS，加入科学端口就可以了。   
