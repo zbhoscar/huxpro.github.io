@@ -75,7 +75,7 @@ tags:
     
 下载
 
-    wget ~ https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json
+    wget -P ~ https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json
 
 启动ShadowSocks
 
