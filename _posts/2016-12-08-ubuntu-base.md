@@ -58,8 +58,16 @@ tags:
 
 #### 安装ShadowSocks
 
-    sudo apt-get install python-pip
+    sudo apt update
+    sudo apt install python-pip
     sudo pip install shadowsocks
+    
+或者
+
+    sudo apt update
+    sudo apt install python-pip
+    sudo apt install git
+    sudo pip install -U git+https://github.com/shadowsocks/shadowsocks.git@master
 
 设置`.json`文件
 
