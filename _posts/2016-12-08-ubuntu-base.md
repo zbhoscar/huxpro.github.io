@@ -12,6 +12,48 @@ tags:
 ---
 常用Ubuntu做科研，这是常用的一些配置指南。
 
+### NVIDIA驱动安装
+
+#### 先禁用nouvea
+
+    sudo gedit /etc/modprobe.d/blacklist.conf
+
+末尾添加
+
+    blacklist nouveau
+    
+更新内核
+
+    sudo update-initramfs -u
+    
+重启。确认生效
+
+    sudo reboot
+    lsmod | grep nouveau
+
+没有输出即可
+
+#### 安装驱动
+
+    sudo add-apt-repository ppa:graphics-drivers/ppa
+    sudo apt update
+
+识别显卡模型和推荐的驱动
+
+    ubuntu-drivers devices
+    
+安装驱动
+    
+    sudo apt install nvidia-driver-410 nvidia-settings nvidia-prime
+
+或者
+
+    sudo ubuntu-drivers autoinstall
+    
+重启生效
+
+    sudo reboot
+
 ### 科学上网
 
 #### 安装ShadowSocks
@@ -30,6 +72,10 @@ tags:
      "timeout":300,
      "method":"aes-256-cfb"
     }
+    
+下载
+
+    wget https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json ~
 
 启动ShadowSocks
 
@@ -41,7 +87,7 @@ tags:
 
 先写一个`.service`文件
 
-    sudo pluma /etc/systemd/system/shadowsocks.service
+    sudo pluma /lib/systemd/system/shadowsocks.service
 
 填写如下内容：
 
@@ -52,16 +98,18 @@ tags:
     [Service]
     Type=simple
     User=root
-    ExecStart=/usr/bin/sslocal -c /DIR/shadowsocks.json
+    ExecStart=/usr/bin/sslocal -c /path/shadowsocks.json
     
     [Install]
     WantedBy=multi-user.target                
 
 启动服务
     
-    systemctl enable /etc/systemd/system/shadowsocks.service 
+    systemctl enable /lib/systemd/system/shadowsocks.service 
 
-`.service`放在`/lib/systemd/system`也可以，直接`service`调用
+懒得写命令行:
+
+    wget https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.service /lib/systemd/system
 
 最终效果是给本机 ip `127.0.0.1`的`1080`端口科学加成，可以配置浏览器和软件用来科学。    
 比如系统自带firefox浏览器中，设置手动代理，选择socks5 DNS，加入科学端口就可以了。   
