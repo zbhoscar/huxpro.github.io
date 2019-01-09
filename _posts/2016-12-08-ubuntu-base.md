@@ -12,6 +12,21 @@ tags:
 ---
 常用Ubuntu做科研，这是常用的一些配置指南。
 
+### Anaconda常用操作
+
+#### 源管理
+
+更换[清华源](https://mirror.tuna.tsinghua.edu.cn/help/anaconda/)
+
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+    conda config --set show_channel_urls yes
+    
+可能需要删除默认源，对于卡在`solving environment`的情况:
+
+    conda config --remove channels defaults
+    
+
 ### NVIDIA驱动安装
 
 #### 先禁用nouvea
