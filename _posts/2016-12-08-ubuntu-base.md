@@ -284,3 +284,31 @@ Ubuntu系统
 #### 设置工作区
 在`software center`中设置`unity tweak tool`
 
+### Boot引导修复Grub
+
+#### 先决环境
+
+U盘启动，试用ubuntu，联网。
+
+打开终端，添加`boot-repair`所在的源：
+
+    sudo add-apt-repository ppa:yannubuntu/boot-repair
+    sudo apt-get update
+
+安装`boot-repair`:
+
+    sudo apt-get install -y boot-repair 
+    
+运行`boot-repair`:
+
+    sudo boot-repair
+
+一般选择`recommanded repair`即可，启动项重启生效
+
+启动项查看
+
+    sudo efibootmgr
+    
+启动项删除
+
+    sudo efibootmgr -b 000A -B
