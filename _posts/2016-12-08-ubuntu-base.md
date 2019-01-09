@@ -30,6 +30,9 @@ tags:
 
     conda config --remove channels defaults
     
+#### [环境配置](https://www.jianshu.com/p/d2e15200ee9b)
+
+    conda create --name semi python=3.6 tensorflow=1.12 matplotlib=2.2.3 opencv=3.4.2
 
 ### NVIDIA驱动安装
 
