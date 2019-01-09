@@ -190,6 +190,35 @@ Ubuntu系统
 
 #### [NFS硬盘挂载](https://www.cnblogs.com/heruiguo/p/7998260.html)
 
+### Boot引导修复Grub
+
+先决环境
+
+U盘启动，试用ubuntu，联网。
+
+打开终端，添加`boot-repair`所在的源：
+
+    sudo add-apt-repository ppa:yannubuntu/boot-repair
+    sudo apt-get update
+
+安装`boot-repair`:
+
+    sudo apt-get install -y boot-repair 
+    
+运行`boot-repair`:
+
+    sudo boot-repair
+
+一般选择`recommanded repair`即可，启动项重启生效
+
+启动项查看
+
+    sudo efibootmgr
+    
+启动项删除
+
+    sudo efibootmgr -b 000A -B
+
 ### Ubuntu环境文件
 
 - `/etc/profile`为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行，并从/etc/profile.d目录的配置文件中搜集shell的设置。   
@@ -284,31 +313,4 @@ Ubuntu系统
 #### 设置工作区
 在`software center`中设置`unity tweak tool`
 
-### Boot引导修复Grub
 
-#### 先决环境
-
-U盘启动，试用ubuntu，联网。
-
-打开终端，添加`boot-repair`所在的源：
-
-    sudo add-apt-repository ppa:yannubuntu/boot-repair
-    sudo apt-get update
-
-安装`boot-repair`:
-
-    sudo apt-get install -y boot-repair 
-    
-运行`boot-repair`:
-
-    sudo boot-repair
-
-一般选择`recommanded repair`即可，启动项重启生效
-
-启动项查看
-
-    sudo efibootmgr
-    
-启动项删除
-
-    sudo efibootmgr -b 000A -B
