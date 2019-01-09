@@ -117,9 +117,10 @@ tags:
 
     wget -P /lib/systemd/system https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.service
 
-2 添加服务
+2 写入service系统
     
     systemctl enable /lib/systemd/system/shadowsocks.service
+实际上是在link到`/etc/systemd/system/multi-user.target.wants`下
     
 3 服务管理
 
