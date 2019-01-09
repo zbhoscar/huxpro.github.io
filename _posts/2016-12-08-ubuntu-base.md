@@ -58,18 +58,20 @@ tags:
 
 #### 安装ShadowSocks
 
+1.1 系统自带安装
+
     sudo apt update
     sudo apt install python-pip
     sudo pip install shadowsocks
     
-或者
+1.2 或者(recommend)
 
     sudo apt update
     sudo apt install python-pip
     sudo apt install git
     sudo pip install -U git+https://github.com/shadowsocks/shadowsocks.git@master
 
-设置`.json`文件
+2.1 设置`.json`文件, 或用2.2下载模版
 
     {
      "server":"my_server_ip",
@@ -81,19 +83,19 @@ tags:
      "method":"aes-256-cfb"
     }
     
-下载
+2.2 下载模版
 
     wget -P ~ https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json
 
-启动ShadowSocks
+3 启动ShadowSocks(unrecommended)
+
+注意: `DIR`是`.json`的路径，`sslocal`可以通过`which sslocal`找到
 
     /usr/bin/sslocal -c /DIR/shadowsocks.json
 
-`DIR`是`.json`的路径，`sslocal`可以通过`which sslocal`找到
-
 #### ShadowSocks服务
 
-先写一个`.service`文件
+1.1 先写一个`.service`文件, 或者用1.2下载模版
 
     sudo pluma /lib/systemd/system/shadowsocks.service
 
@@ -111,13 +113,18 @@ tags:
     [Install]
     WantedBy=multi-user.target    
 
-懒得写命令行:
+1.2 懒得写命令行:
 
     wget -P /lib/systemd/system https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.service
 
-启动服务
+2 添加服务
     
-    systemctl enable shadowsocks.service 
+    systemctl enable /lib/systemd/system/shadowsocks.service
+    
+3 服务管理
+
+    service shadowsocks start
+    service shadowsocks stop
 
 最终效果是给本机 ip `127.0.0.1`的`1080`端口科学加成，可以配置浏览器和软件用来科学。    
 比如系统自带firefox浏览器中，设置手动代理，选择socks5 DNS，加入科学端口就可以了。   
