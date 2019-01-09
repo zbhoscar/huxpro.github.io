@@ -32,8 +32,12 @@ tags:
     
 #### [环境配置](https://www.jianshu.com/p/d2e15200ee9b)
 
+    conda info --envs
     conda create --name semi python=3.6 tensorflow=1.12 matplotlib=2.2.3 opencv=3.4.2
-
+    conda activate semi
+    conda deactivate
+    conda remove -n flowers --all
+    
 ### NVIDIA驱动安装
 
 #### 先禁用nouvea
