@@ -154,10 +154,14 @@ tags:
                                                 
     sudo apt-get install vnc4server    # 最新版本看官网
     vim /home/用户名/.vnc/xstartup
-    ⬇⬇⬇ 内容修改 ⬇⬇⬇
+
+内容修改
+
     # &x-window-manager &              # 注释掉     
     exec /usr/bin/mate-session &       # 针对mate界面
-    ⬆⬆⬆ 内容修改 ⬆⬆⬆
+
+重启服务
+
     service vncserver restart
 
 使用方法
@@ -266,8 +270,9 @@ U盘启动，试用ubuntu，联网。
 #### [终端配色](https://ubuntugenius.wordpress.com/2011/07/11/how-to-change-the-command-line-prompt-colour-in-the-ubuntulinux-terminal/)
 
     sudo gedit ~/.bashrc
-   替换相似`PS1`行，并设置`force_color_prompt=yes`     
-   这是一种配色方案：     
+    
+替换相似`PS1`行，并设置`force_color_prompt=yes`     
+这是一种配色方案：     
    
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u\[\033[01;36m\]@\[\033[01;36m\]\h\[\033[01;36m\]:\[\033[01;33m\]\w\[\033[01;36m\]\$ \[\e[m\] '
 
