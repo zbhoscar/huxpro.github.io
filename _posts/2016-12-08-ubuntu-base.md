@@ -16,6 +16,10 @@ tags:
 
 #### 源管理
 
+查看当前源
+
+    conda config --show-sources
+
 更换[清华源](https://mirror.tuna.tsinghua.edu.cn/help/anaconda/)
 
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
