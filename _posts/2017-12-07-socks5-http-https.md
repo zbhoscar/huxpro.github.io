@@ -35,98 +35,81 @@ tags:
 ![img][5]         
 ![img][6]      
 
-#### 手动设置SS服务器    
+[shadowsocks官方](https://github.com/shadowsocks/shadowsocks/wiki)
+
+#### 安装shadowsocks    
 
     sudo apt-get update  
     sudo apt-get install python-pip     
-    sudo pip install shadowsocks     
-    sudo ssserver -p id -k pwd -m aes-256-cfb -d start  #id、pwd自行设置     
+    sudo pip install shadowsocks
+    
+#### 配置`.json`文件
 
-在`/etc/rc.local`中正确设置开机启动：   
-1.`/etc/rc.local`中不需要`sudo`(默认root); 2.需要写全路径，可通过`which ssserver`查看
+**server单端口，及client**:
 
-    /usr/local/bin/ssserver -p 8388 -k mypassword -m aes-256-cfb -d start
-    /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start  
-
-ps. 输出诊断信息到log，写在执行语句之前。切不要盲目修改`/etc/rc.local`：
-
-    exec 2> /tmp/rc.local.log      # send stderr from rc.local to a log file
-    exec 1>&2                      # send stdout to the same log file
-    set -x                         # tell sh to display commands before execution
-
-在`/etc/crontab`中设置系统定时重启，增加`ssserver`稳定性：
-
-    30 22 * * 1,4 root sleep 70 || /sbin/reboot          # 照猫画虎，注意时区换算(uptime, last reboot, 服务器22:3即北京6:30, 每周1,4) 
-
-#### 通过`.json`启动
-
-编写`vim ~/shadowsocks-server.json`文件        
-
-    -------- single usr --------
     {
-        "server":"0.0.0.0",
+        "server":"my_server_ip",
         "server_port":8388,
         "local_address": "127.0.0.1",
         "local_port":1080,
         "password":"mypassword",
         "timeout":300,
-        "method":"aes-256-cfb"
+        "method":"aes-256-cfb",
+        "fast_open": false
     }
-    -------- multiple usr --------
-    {  
-         "server":"0.0.0.0"，  
-         "local_address": "127.0.0.1",  
-         "local_port":1080,  
-          "port_password": {  
-             "8388": "password",  
-             "8387": "password",  
-             "8386": "password",  
-             "8385": "password"  
-         },  
-         "timeout":300,  
-         "method":"aes-256-cfb",  
-         "fast_open": false  
-        }  
 
-启动
-
-    ssserver -c ~/shadowsocks-server.json -d start
-        
-#### 设置服务
-
-编辑
-        
-    vim /etc/supervisord.conf
+下载链接    
     
-添加内容
-
-    [program:shadowsocks]
-    command=ssserver -c /etc/shadowsocks.json
-    autostart=true
-    autorestart=true
-    user=root
-    log_stderr=true
-    logfile=/var/log/shadowsocks.log
-
-在`/etc/rc.local`中添加
-
-    service supervisord start
+    wget -P /etc https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json
     
-#### 批量操作
-
-下载server模版，修改配置
-
-    wget -P ~ https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks-server-multiple.json
     
-下载服务模版，修改配置
+**server多端口**:
 
-    wget -P /etc https://raw.githubusercontent.com/zbhoscar/storage/master/supervisord.conf
+    {
+        "server": "0.0.0.0",
+        "port_password": {
+            "8381": "foobar1",
+            "8382": "foobar2",
+            "8383": "foobar3",
+            "8384": "foobar4"
+        },
+        "timeout": 300,
+        "method": "aes-256-cfb"
+    }
+     
+下载链接    
+    
+    wget -P /etc https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks-multi.json
 
-设置开机启动服务，在`/etc/rc.local`中添加
+#### 单次启动shadowsocks
 
-    service supervisord start
+    ssserver -c /etc/shadowsocks-server.json -d start
 
-#### 使用[大神脚本](https://teddysun.com/486.html)设置SS服务器
+单端口启动也可以简化为: 
+
+    ssserver -p 8388 -k mypassword -m aes-256-cfb -d start
+
+#### 写入`/etc/rc.local`设置开机启动
+   
+**注意: `/etc/rc.local`中不需要`sudo`(默认root); 2.需要写全路径，可通过`which ssserver`查看**
+
+    /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start  
+
+可以添加如下几行, 输出诊断信息到log，写在执行语句之前。**切不要盲目修改`/etc/rc.local`**：
+
+    exec 2> /tmp/rc.local.log      # send stderr from rc.local to a log file
+    exec 1>&2                      # send stdout to the same log file
+    set -x                         # tell sh to display commands before execution
+
+#### 服务器定时重启
+
+在`/etc/crontab`中设置系统定时重启，增加`ssserver`稳定性：
+
+    30 22 * * 1,4 root sleep 70 || /sbin/reboot          
+    
+注意: 照猫画虎，注意时区换算(uptime, last reboot, 服务器22:3即北京6:30, 每周1,4) 
+
+#### 使用[现成脚本](https://teddysun.com/486.html)设置SS服务器
 
     wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
     chmod +x shadowsocks-all.sh
