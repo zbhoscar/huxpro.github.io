@@ -324,7 +324,7 @@ U盘启动，试用ubuntu，联网。
 #### U盘exFat格式支持
 可能需要重启，反正Ubuntu16不需要
 
-    sudo apt-get install exfat-utils 
+    sudo apt-get install exfat-fuse exfat-utils 
 
 ### 其他
 ####  GCC/G++ multi
