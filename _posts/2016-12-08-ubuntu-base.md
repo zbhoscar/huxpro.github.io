@@ -100,24 +100,22 @@ tags:
 2.1 设置`.json`文件, 或用2.2下载模版
 
     {
-     "server":"my_server_ip",
-     "local_address": "127.0.0.1",
-     "local_port":1080,
-     "server_port":my_server_port,
-     "password":"my_password",
-     "timeout":300,
-     "method":"aes-256-cfb"
+        "server":"my_server_ip",
+        "local_address": "127.0.0.1",
+        "local_port":1080,
+        "server_port":my_server_port,
+        "password":"my_password",
+        "timeout":300,
+        "method":"aes-256-cfb"
     }
     
 2.2 下载模版
 
-    wget -P ~ https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json
+    wget -P /etc https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.json
 
-3 启动ShadowSocks(unrecommended)
+3 单次启动ShadowSocks(unrecommended)
 
-注意: `DIR`是`.json`的路径，`sslocal`可以通过`which sslocal`找到
-
-    /usr/bin/sslocal -c /DIR/shadowsocks.json
+    sslocal -c /etc/shadowsocks.json -d start
 
 #### ShadowSocks服务
 
@@ -125,7 +123,7 @@ tags:
 
     sudo pluma /lib/systemd/system/shadowsocks.service
 
-填写如下内容：
+填写如下内容. 注意: `sslocal`可以通过`which sslocal`找到
 
     [Unit]
     Description=Shadowsocks Client Service
@@ -143,7 +141,7 @@ tags:
 
     wget -P /lib/systemd/system https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks.service
 
-2 写入service系统
+2 载入service系统
     
     systemctl enable /lib/systemd/system/shadowsocks.service
     
