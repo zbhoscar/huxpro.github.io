@@ -110,6 +110,20 @@ ps. 输出诊断信息到log，写在执行语句之前。切不要盲目修改`
 在`/etc/rc.local`中添加
 
     service supervisord start
+    
+#### 批量操作
+
+下载server模版，修改配置
+
+    wget -P ~ https://raw.githubusercontent.com/zbhoscar/storage/master/shadowsocks-server-multiple.json
+    
+下载服务模版，修改配置
+
+    wget -P /etc https://raw.githubusercontent.com/zbhoscar/storage/master/supervisord.conf
+
+设置开机启动服务，在`/etc/rc.local`中添加
+
+    service supervisord start
 
 #### 使用[大神脚本](https://teddysun.com/486.html)设置SS服务器
 
