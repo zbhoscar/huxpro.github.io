@@ -89,7 +89,7 @@ tags:
 
     ssserver -p 8388 -k mypassword -m aes-256-cfb -d start
 
-#### 写入`/etc/rc.local`设置开机启动
+#### 写入`/etc/rc.local`开机自启
    
 **注意: `/etc/rc.local`中不需要`sudo`(默认root); 2.需要写全路径，可通过`which ssserver`查看**
 
