@@ -45,7 +45,8 @@ tags:
 在`/etc/rc.local`中正确设置开机启动：   
 1.`/etc/rc.local`中不需要`sudo`(默认root); 2.需要写全路径，可通过`which ssserver`查看
 
-    /usr/local/bin/ssserver -p 8388 -k mypassword -m aes-256-cfb -d start  
+    /usr/local/bin/ssserver -p 8388 -k mypassword -m aes-256-cfb -d start
+    /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start  
 
 ps. 输出诊断信息到log，写在执行语句之前。切不要盲目修改`/etc/rc.local`：
 

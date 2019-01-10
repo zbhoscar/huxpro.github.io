@@ -146,6 +146,7 @@ tags:
 2 写入service系统
     
     systemctl enable /lib/systemd/system/shadowsocks.service
+    
 实际上是在link到`/etc/systemd/system/multi-user.target.wants`下
     
 3 服务管理
