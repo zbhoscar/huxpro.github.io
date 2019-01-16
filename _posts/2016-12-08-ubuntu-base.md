@@ -210,6 +210,10 @@ tags:
 #### Samba远程文件夹
 
 [配置Samba远程连接](http://jingyan.baidu.com/article/00a07f38b9194082d028dc08.html)  
+
+Check smb in servers: 
+
+    /etc/samba/smb.conf
     
 Windows系统
     
