@@ -47,6 +47,7 @@ Developer Org
 [[GCP]](https://cloud.google.com/)
 [[GCP ping]](http://www.gcping.com/)
 [[playground]](http://playground.tensorflow.org)
+[[OpenCV.Doc]](https://docs.opencv.org/3.4.2/)
 
 
 LAB &Daniel               
