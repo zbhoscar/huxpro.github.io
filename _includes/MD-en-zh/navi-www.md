@@ -48,7 +48,7 @@ Developer Org
 [[GCP ping]](http://www.gcping.com/)
 [[playground]](http://playground.tensorflow.org)
 [[OpenCV.Doc]](https://docs.opencv.org/3.4.2/)
-
+[[OpenCV-Python_Tutorial]](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)
 
 LAB &Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
