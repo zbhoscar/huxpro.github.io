@@ -36,7 +36,7 @@ Developer Org
 [[CUDA.doc]](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#abstract)
 [[CUDA.download]](https://developer.nvidia.com/cuda-downloads)
 [[cuDNN.download]](https://developer.nvidia.com/cudnn)      
-[[Anaconda]](https://www.anaconda.com)
+[[conda.io]](https://conda.io/projects/conda/en/latest/user-guide)
 [[FFmpeg]](https://github.com/FFmpeg/FFmpeg)
 [[OpenCV]](http://opencv.org/releases.html)
 [[OpenWrt]](https://wiki.openwrt.org/start)
