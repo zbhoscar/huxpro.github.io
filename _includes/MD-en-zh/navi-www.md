@@ -50,6 +50,7 @@ Developer Org
 [[playground]](http://playground.tensorflow.org)
 [[OpenCV.Doc]](https://docs.opencv.org/3.4.2/)
 [[OpenCV-Python_Tutorial]](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)
+[[theano.T]](http://deeplearning.net/software/theano/tutorial/index.html)
 
 LAB &Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
@@ -75,6 +76,9 @@ DataSets
 [[Kinetics]](https://deepmind.com/research/open-source/open-source-datasets/kinetics/)
 [[AoT]](https://github.com/donglaiw/AoT_Dataset)
 [[AVA]](https://research.google.com/ava/)
+[[UCF-Crime]](https://webpages.uncc.edu/cchen62/dataset.html)
+[[UCFCrime2Local]](http://imagelab.ing.unimore.it/UCFCrime2Local)
+[[StreetScene]](http://www.merl.com/demos/video-anomaly-detection)
 
 
 XJTU        
