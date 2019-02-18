@@ -13,7 +13,8 @@ Coding
 [[ALL.Pre-train]](https://github.com/taehoonlee/tensornets)
 [[TF_cn]](http://www.tensorfly.cn)
 [[TF.API]](https://www.tensorflow.org/api_docs/python)
-[[TF.Pre-train]](https://github.com/tensorflow/models/tree/master/research/slim)       
+[[TF.Pre-train]](https://github.com/tensorflow/models/tree/master/research/slim)
+[[theano.T]](http://deeplearning.net/software/theano/tutorial/index.html)       
 [[vlfeat]](https://github.com/vlfeat/vlfeat)
 [[LIBSVM]](https://github.com/cjlin1/libsvm)
 [[LIBLINEAR]](http://www.csie.ntu.edu.tw/~cjlin/liblinear/)
@@ -50,7 +51,6 @@ Developer Org
 [[playground]](http://playground.tensorflow.org)
 [[OpenCV.Doc]](https://docs.opencv.org/3.4.2/)
 [[OpenCV-Python_Tutorial]](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)
-[[theano.T]](http://deeplearning.net/software/theano/tutorial/index.html)
 
 LAB &Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
