@@ -38,7 +38,7 @@ Ubuntu Shell常用到的指令
     chown -R zbh.zbh /home/zbh/IPT          # 路径必须为真实路径，软连接没反应
     chgrp -R zbh /data2_alpha/zbh/          # 修改组
     chown -R zbh /data2_alpha/zbh/          # 修改用户
-    wget -P ~/Downloads ftp://example_link  # 修改用户
+    wget -P ~/Downloads ftp://example_link  # 网站下载到指定-P目录
 
 ## 用户与组
     
