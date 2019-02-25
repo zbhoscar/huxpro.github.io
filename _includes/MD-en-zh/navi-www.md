@@ -10,7 +10,7 @@
 
 Coding      
 [[tensorflow-tutorial]](https://github.com/caicloud/tensorflow-tutorial)
-[[all_pre-trained weights]](https://github.com/taehoonlee/tensornets)
+[[ALL_pre-trained]](https://github.com/taehoonlee/tensornets)
 [[TF_pre-trained]](https://github.com/tensorflow/models/tree/master/research/slim)
 [[theano_tutorial]](http://deeplearning.net/software/theano/tutorial/index.html)       
 [[vlfeat]](https://github.com/vlfeat/vlfeat)
@@ -21,9 +21,8 @@ Coding
 [[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)         
 [[Devil Details]](http://www.robots.ox.ac.uk/~vgg/software/deep_eval/)
 [[two-stream fusion]](https://github.com/feichtenhofer/twostreamfusion)         
-[[Numpy_API]](https://www.numpy.org.cn/)        
-[[VATIC-VideoAnnotation]](https://github.com/cvondrick/vatic)
-    
+[[VATIC-VideoAnnotation]](https://github.com/cvondrick/vatic)        
+
 
 Developer Org   
 [[TensorFlow_API]](https://www.tensorflow.org/api_docs/python)
@@ -50,6 +49,7 @@ Developer Org
 [[廖雪峰]](https://www.liaoxuefeng.com/)
 [[morvanzhou]](https://morvanzhou.github.io/)
 [[Parallel Python]](http://www.parallelpython.com/)
+[[Numpy_API]](https://www.numpy.org.cn/)
 
 LAB &Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
