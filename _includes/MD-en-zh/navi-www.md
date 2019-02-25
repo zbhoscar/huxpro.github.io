@@ -11,7 +11,8 @@
 Coding      
 [[tensorflow-tutorial]](https://github.com/caicloud/tensorflow-tutorial)
 [[ALL_pre-trained]](https://github.com/taehoonlee/tensornets)
-[[TF_pre-trained]](https://github.com/tensorflow/models/tree/master/research/slim)       
+[[TF_pre-trained]](https://github.com/tensorflow/models/tree/master/research/slim)
+[[C3D-tensorflow]](https://github.com/hx173149/C3D-tensorflow)
 [[vlfeat]](https://github.com/vlfeat/vlfeat)
 [[LIBSVM]](https://github.com/cjlin1/libsvm)
 [[LIBLINEAR]](http://www.csie.ntu.edu.tw/~cjlin/liblinear/)
