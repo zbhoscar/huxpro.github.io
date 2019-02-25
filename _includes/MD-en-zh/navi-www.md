@@ -11,8 +11,7 @@
 Coding      
 [[tensorflow-tutorial]](https://github.com/caicloud/tensorflow-tutorial)
 [[ALL_pre-trained]](https://github.com/taehoonlee/tensornets)
-[[TF_pre-trained]](https://github.com/tensorflow/models/tree/master/research/slim)
-[[theano_tutorial]](http://deeplearning.net/software/theano/tutorial/index.html)       
+[[TF_pre-trained]](https://github.com/tensorflow/models/tree/master/research/slim)       
 [[vlfeat]](https://github.com/vlfeat/vlfeat)
 [[LIBSVM]](https://github.com/cjlin1/libsvm)
 [[LIBLINEAR]](http://www.csie.ntu.edu.tw/~cjlin/liblinear/)
@@ -50,6 +49,7 @@ Developer Org
 [[morvanzhou]](https://morvanzhou.github.io/)
 [[Parallel Python]](http://www.parallelpython.com/)
 [[Numpy_API]](https://www.numpy.org.cn/)
+[[theano_tutorial]](http://deeplearning.net/software/theano/tutorial/index.html)
 
 LAB &Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
