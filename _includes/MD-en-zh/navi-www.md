@@ -23,7 +23,7 @@ Coding
 [[two-stream fusion]](https://github.com/feichtenhofer/twostreamfusion)         
 [[VATIC-VideoAnnotation]](https://github.com/cvondrick/vatic)
 [[fbresearch]](https://github.com/facebookresearch)
-[[dpmdetector]](https://github.com/rbgirshick/voc-dpm)
+[[voc-dpm]](https://github.com/rbgirshick/voc-dpm)
 
 
 Developer Org   
