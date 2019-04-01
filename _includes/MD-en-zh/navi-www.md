@@ -30,6 +30,7 @@ Developer Org
 [[TensorFlow_API]](https://www.tensorflow.org/api_docs/python)
 [[TF_ZH]](http://www.tensorfly.cn)
 [[Caffe]](http://caffe.berkeleyvision.org/tutorial/interfaces.html)
+[[MATLAB_API]](https://www.mathworks.com/help/matlab/index.html)
 [[MatConvNet]](http://www.vlfeat.org/matconvnet)
 [[theano_tutorial]](http://deeplearning.net/software/theano/tutorial/index.html)      
 [[CUDA_install]](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#abstract)
