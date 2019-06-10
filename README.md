@@ -1,6 +1,7 @@
 # 本地调试
 
-
+    jekyll build
+    jekyll serve
 
 
 # Hux Blog
