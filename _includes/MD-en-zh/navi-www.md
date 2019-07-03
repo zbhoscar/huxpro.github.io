@@ -21,7 +21,8 @@ Coding
 [[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)         
 [[Devil Details]](http://www.robots.ox.ac.uk/~vgg/software/deep_eval/)
 [[two-stream fusion]](https://github.com/feichtenhofer/twostreamfusion)         
-[[VATIC-VideoAnnotation]](https://github.com/cvondrick/vatic)
+[[VATIC]](https://github.com/cvondrick/vatic)
+[[LabelImg]](https://github.com/tzutalin/labelImg)
 [[fbresearch]](https://github.com/facebookresearch)
 [[voc-dpm]](https://github.com/rbgirshick/voc-dpm)
 
