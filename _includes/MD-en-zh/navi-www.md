@@ -1,12 +1,11 @@
 文献检索        
+[[CCF rcmd]](https://www.ccf.org.cn/c/2016-12-27/569124.shtml) 
 [[XJTU lib]](http://www.lib.xjtu.edu.cn/)
 [[WoS]](https://apps.webofknowledge.com/)
 [[Google Scholar]](https://scholar.google.com)
-[[CCF rcmd]](https://www.ccf.org.cn/c/2016-12-27/569124.shtml) 
 [[dblp]](https://dblp.uni-trier.de/)
-[[Semantic Scholar]](https://www.semanticscholar.org/)
+[[CVF]](http://openaccess.thecvf.com)
 [[arXiv.org]](https://arxiv.org/)
-
 
 Coding      
 [[tensorflow-tutorial]](https://github.com/caicloud/tensorflow-tutorial)
@@ -25,7 +24,6 @@ Coding
 [[LabelImg]](https://github.com/tzutalin/labelImg)
 [[fbresearch]](https://github.com/facebookresearch)
 [[voc-dpm]](https://github.com/rbgirshick/voc-dpm)
-
 
 Developer Org   
 [[TensorFlow_API]](https://www.tensorflow.org/api_docs/python)
