@@ -17,15 +17,15 @@ Coding
 [[LIBSVM]](https://github.com/cjlin1/libsvm)
 [[LIBLINEAR]](http://www.csie.ntu.edu.tw/~cjlin/liblinear/)
 [[SVM-perf]](http://www.cs.cornell.edu/people/tj/svm_light/svm_perf.html)        
-[[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)
-[[YOLO]](https://pjreddie.com/darknet/yolo/)       
 [[IDT]](http://lear.inrialpes.fr/~wang/improved_trajectories)
 [[deepeval-encoder]](http://www.robots.ox.ac.uk/~vgg/software/deep_eval/)
 [[two-stream fusion]](https://github.com/feichtenhofer/twostreamfusion)         
 [[VATIC]](https://github.com/cvondrick/vatic)
 [[LabelImg]](https://github.com/tzutalin/labelImg)
 [[fbresearch]](https://github.com/facebookresearch)
-[[voc-dpm]](https://github.com/rbgirshick/voc-dpm)
+[[voc-dpm]](https://github.com/rbgirshick/voc-dpm)         
+[[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)
+[[YOLO]](https://pjreddie.com/darknet/yolo/)       
 
 Developer Org   
 [[TensorFlow_API]](https://www.tensorflow.org/api_docs/python)
