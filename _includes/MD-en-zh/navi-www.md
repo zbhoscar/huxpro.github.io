@@ -25,6 +25,7 @@ Coding
 [[fbresearch]](https://github.com/facebookresearch)
 [[voc-dpm]](https://github.com/rbgirshick/voc-dpm)         
 [[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)
+[[SSD-Tensorflow]](https://github.com/balancap/SSD-Tensorflow)
 [[YOLO]](https://pjreddie.com/darknet/yolo/)       
 
 Developer Org   
