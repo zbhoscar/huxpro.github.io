@@ -58,7 +58,7 @@ Developer Org
 [[廖雪峰]](https://www.liaoxuefeng.com/)
 [[morvanzhou]](https://morvanzhou.github.io/)
 
-LAB &Daniel               
+LAB & Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
 [[VGG]](http://www.robots.ox.ac.uk/~vgg/)
 [[EPFL CVLAB]](https://cvlab.epfl.ch/)
@@ -70,7 +70,7 @@ LAB &Daniel
 [[sczhu]](http://www.stat.ucla.edu/~sczhu/)
 [[feifeili]](http://vision.stanford.edu/feifeili/)
 [[abhinavg]](http://www.cs.cmu.edu/~abhinavg/)
-[[wanli]](https://sydney.edu.au/engineering/people/wanli.ouyang.php)
+[[wanli]](https://sydney.edu.au/engineering/people/wanli.ouyang.php)             
 [[liang]](http://www.liangzheng.com.cn)
 
 DataSets      
