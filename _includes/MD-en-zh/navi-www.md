@@ -1,13 +1,13 @@
 文献检索        
 [[CCF rcmd]](https://www.ccf.org.cn/c/2016-12-27/569124.shtml) 
-[[XJTU lib]](http://www.lib.xjtu.edu.cn/)
 [[WoS]](https://apps.webofknowledge.com/)
 [[Google Scholar]](https://scholar.google.com)
-[[Glgoo]](https://xue.glgoo.org)
 [[dblp]](https://dblp.uni-trier.de/)
 [[CVF]](http://openaccess.thecvf.com)
-[[arXiv.org]](https://arxiv.org/)
+[[arXiv.org]](https://arxiv.org/)        
+[[XJTU lib]](http://www.lib.xjtu.edu.cn/)
 [[XJTU WebVPN]](https://webvpn.xjtu.edu.cn/)
+[[Glgoo]](https://xue.glgoo.org)
 
 Coding      
 [[tensorflow-tutorial]](https://github.com/caicloud/tensorflow-tutorial)
