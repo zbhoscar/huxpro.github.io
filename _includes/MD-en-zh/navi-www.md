@@ -7,6 +7,7 @@
 [[dblp]](https://dblp.uni-trier.de/)
 [[CVF]](http://openaccess.thecvf.com)
 [[arXiv.org]](https://arxiv.org/)
+[[XJTU WebVPN]](https://webvpn.xjtu.edu.cn/)
 
 Coding      
 [[tensorflow-tutorial]](https://github.com/caicloud/tensorflow-tutorial)
