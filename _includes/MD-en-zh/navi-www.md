@@ -23,11 +23,12 @@ Coding
 [[VATIC]](https://github.com/cvondrick/vatic)
 [[LabelImg]](https://github.com/tzutalin/labelImg)
 [[voc-dpm]](https://github.com/rbgirshick/voc-dpm)
+[[FlowNet]](https://lmb.informatik.uni-freiburg.de/resources/software.php)
 [[C3D-tensorflow]](https://github.com/hx173149/C3D-tensorflow)
 [[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)
 [[SSD-TensorFlow]](https://github.com/balancap/SSD-Tensorflow)
 [[YOLO]](https://pjreddie.com/darknet/yolo/)
-[[FlowNet]](https://lmb.informatik.uni-freiburg.de/resources/software.php)
+[[Detectron]](https://github.com/facebookresearch/Detectron)
 
 
 Developer Org   
