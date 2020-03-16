@@ -29,6 +29,7 @@ Coding
 [[SSD-TensorFlow]](https://github.com/balancap/SSD-Tensorflow)
 [[YOLO]](https://pjreddie.com/darknet/yolo/)
 [[Detectron]](https://github.com/facebookresearch/Detectron)
+[[Faster R-CNN]](https://github.com/ShaoqingRen/faster_rcnn)
 
 
 Developer Org   
