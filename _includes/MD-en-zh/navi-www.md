@@ -22,7 +22,6 @@ Coding
 [[two-stream fusion]](https://github.com/feichtenhofer/twostreamfusion)
 [[VATIC]](https://github.com/cvondrick/vatic)
 [[LabelImg]](https://github.com/tzutalin/labelImg)
-[[fbresearch]](https://github.com/facebookresearch)
 [[voc-dpm]](https://github.com/rbgirshick/voc-dpm)
 [[C3D-tensorflow]](https://github.com/hx173149/C3D-tensorflow)
 [[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)
@@ -63,6 +62,7 @@ Developer Org
 LAB & Daniel               
 [[Thoth]](http://lear.inrialpes.fr/)
 [[VGG]](http://www.robots.ox.ac.uk/~vgg/)
+[[FAIR]](https://github.com/facebookresearch)
 [[EPFL CVLAB]](https://cvlab.epfl.ch/)
 [[LAMBDA]](http://lamda.nju.edu.cn)
 [[MSRA]](https://www.msra.cn/)
