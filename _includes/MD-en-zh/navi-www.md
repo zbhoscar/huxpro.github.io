@@ -28,7 +28,7 @@ Coding
 [[SSD]](https://github.com/weiliu89/caffe/tree/ssd#installation)
 [[SSD-TensorFlow]](https://github.com/balancap/SSD-Tensorflow)
 [[YOLO]](https://pjreddie.com/darknet/yolo/)
-[[Detectron2]](https://github.com/facebookresearch/detectron2)
+[[detectron2]](https://github.com/facebookresearch/detectron2)
 [[Faster R-CNN]](https://github.com/ShaoqingRen/faster_rcnn)
 
 
